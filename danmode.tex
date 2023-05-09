@@ -1,0 +1,222 @@
+\documentclass[a4paper]{article}
+\usepackage{a4wide}
+\pdfmapfile{=tengwarscript.map}
+\usepackage[annatar]{tengwarscript}
+% \usepackage[annataritalic]{tengwarscript}
+% \usepackage[parmaite]{tengwarscript}
+\usepackage{tipa}
+%\usepackage{array}
+\usepackage{multirow}
+
+
+
+\begin{document}
+
+%\newcommand{\alen}{0.07\linewidth}
+\newcommand{\tngw}[2][2]{\multirow{#1}{1em}{#2}}
+\newcommand{\mystrut}{\rule[-1.0\baselineskip]{0pt}{3.5\baselineskip}}
+\newcommand\T{\rule{0pt}{2.8ex}}       % Top strut
+\newcommand\B{\rule[-1.4ex]{0pt}{0pt}} % Bottom strut
+
+\begin{center}\LARGE
+  \textbf{Dansk tengwar modus --- Danish tengwar mode}\\
+  \tengmag{1.5}
+  \Tando\Tnuumen\TTthreedots\Tsilme\Tquesse\Ts
+  \Ttinco\Tnwalme\TTacute\Tvala\Toore\TTthreedots\Ts
+  \Tmalta\Tando\TTrightcurl\Tsilmenuquerna\TTleftcurl
+\end{center}
+
+\begin{center}
+  \begin{tabular}{|ll|ll|ll|ll|}
+    \hline\hline
+    \multicolumn{8}{|l|}{\textbf{Consonants:}}\\
+    \hline\hline
+    \tngw{\Ttinco}&tinco&\tngw{\Tparma}&parma&
+      \tngw{\Tcalma}&calma&\tngw{\Tquesse}&quess\"e \\
+                  & t && p && ch, tj \textipa{[tS]}$^{\ref{noteAhaCalma}}$ && k, c [k]$^{\ref{noteCS}}$\\
+    \hline
+    \tngw{\Tando}&ando&\tngw{\Tumbar}&umbar&
+       \tngw{\Tanga}&anga&\tngw{\Tungwe}&ungw\"e\\                                  
+                  & d (hårdt [d])$^{\ref{noteD}}$ && b &&  && g (hårdt)$^{\ref{noteG}}$\\
+    \hline
+    \tngw{\Tthuule}&th\'ul\"e&\tngw{\Tformen}&formen&
+       \tngw{\Taha}&aha&\tngw{\Thwesta}&hwesta\\                                               
+    & && f, ph && sch, sh, ch \textipa{[S]}$^{\ref{noteAhaCalma}}$ && \\
+    \hline
+    \tngw{\Tanto}&anto&\tngw{\Tampa}&ampa&
+      \tngw{\Tanca}&anca&\tngw{\Tunque}&unqu\"e\\
+    & d (blødt\textipa{[D]}) $^{\ref{noteD}}$ && v && && g (blødt)$^{\ref{noteG}}$\\
+    \hline
+    \tngw{\Tnuumen}&n\'umen&\tngw{\Tmalta}&malta&
+      \tngw{\Tnoldo}&noldo&\tngw{\Tnwalme}&nwalm\"e\\
+    & n && m && && ng \textipa{[N]}\\
+    \hline
+    \tngw[3]{\Toore}&\'or\"e&\tngw[3]{\Tvala}&vala&
+       \tngw[3]{\Tanna}&anna&\tngw[3]{\Tvilya}&vilya\\
+                  & r $^{\ref{noteR}}$ && w && j && \\
+    & && -u diftong$^{\ref{noteW}}$ && -i diftong$^{\ref{noteJ}}$ &&\\ 
+    \hline\hline
+    \tngw{\Troomen}&r\'omen&\tngw{\Tarda}&arda&
+       \tngw{\Tlambe}&lamb\"e&\tngw{\Talda}&alda\\
+                  & r $^{\ref{noteR}}$ && && l &&\\
+    \hline
+    \tngw[3]{\Tsilme}&silm\"e&\tngw[3]{\Tsilmenuquerna}&silm\"e&
+       \tngw[3]{\Tesse}&ess\"e&\tngw[3]{\Tessenuquerna}&ess\"e\\
+    & && ~nuquerna && && ~nuquerna\\
+                  & s$^{\ref{noteCS}}$ && s, c [s]$^{\ref{noteCS}}$ && z && z \\
+    \hline
+    \tngw[3]{\Thyarmen}&hyarmen&\tngw[3]{\Thwestasindarinwa}&hwesta&
+       \tngw[3]{\Tyanta}&yanta&\tngw[3]{\Tuure}&\'ur\"e\\
+    & && ~sindarinwa && &&\\
+                  & h && hv $^{\ref{noteHv}}$ &&  && \\
+    \hline
+    \tngw{\Tosse}&oss\"e&\tngw{\Thalla}&halla&
+        \tngw{\Ttelco}&telco&\tngw{\Taara}&\'ara\\
+    &  && h (stumt)$^{\ref{notehalla}}$ && vokal && (kun for å)$^{\ref{notevokal}}$  \\
+    \hline\hline
+    \tngw[3]{\Textendedtinco}&extended&\tngw[3]{\Textendedparma}&extended&
+       \tngw[3]{\Textendedcalma}&extended&\tngw[3]{\Textendedquesse}&extended\\
+                  & ~tinco && ~parma && ~calma && ~quess\"e\\
+                  & th [t]$^{\ref{noteTH}}$ && ph [f] && && \\
+    \hline
+    \tngw[3]{\Textendedando}&extended&\tngw[3]{\Textendedumbar}&extended&
+       \tngw[3]{\Textendedanga}&extended&\tngw[3]{\Textendedungwe}&extended\\
+                  & ~ando && ~umbar && ~anga && ~ungw\"e\\
+                  & d (stumt)$^{\ref{noteD}}$ &&  && && \\
+    \hline\hline
+    \multicolumn{8}{|l|}{\textbf{Vowels::}}\\
+    \hline\hline
+    \Ttelco\TTthreedots& a & \Ttelco\TTacute & e & 
+       \Ttelco\TTdot & i & \Ttelco\TTrightcurl & o \T\B \\
+    \hline
+    \Ttelco\TTleftcurl & u & \Ttelco\TTbreve & y &
+       \Ttelco\TTinvertedthreedots & æ \T\B& \Ttelco\TTdoubleacute & ø \\
+    \hline
+    \Taara\TTthreedots& å & \Ttelco\TTtwodots & \"u $^{\ref{notevokal}}$ &
+       \Ttelco\TTdotbelow & e (stumt) \T\B& & \\
+    \hline\hline
+  \end{tabular}
+\end{center}
+
+% UNCOMMENT TO TEST Æ-TETHA PLACEMENT
+% \begin{center}
+%  \tengmag{3}
+%  \Taara\TTthreedots\Tvala\TTthreedots\Tvala\TTinvertedthreedots\Tvala\TTrightcurl\Tvala\TTdot\Tvala\TTacute\Tvala\TTthreedots
+% \end{center}
+
+\pagebreak
+{\Large \textbf{Notes (English):}\par}
+
+\begin{enumerate}
+\item Danish vowels Æ, Ø, and Å: \Ttelco\TTinvertedthreedots\Ts
+  \Ttelco\TTdoubleacute ~and \Taara\TTthreedots, respectively.  The
+  first two follow the example of the German and Swedish modes.  The Å
+  reflects the pre-1948 orthography of writing the letter as Aa.  Note
+  that even then, aa was considered a distinct vowel alphabetized at
+  the end of the alphabet.  The long carrier (\'ara) should not be
+  used for other purposes.  Y is always a vowel.  The german letter
+  \"u sometimes appears in names, and can be written as in the German
+  mode \Ttelco\TTtwodots ~or as y \Ttelco\TTbreve ~according to
+  taste.\label{notevokal}
+\item The vowel combination ue can be two distinct vowels written as
+  such, or the e can be silent and be written with the e-dot below: \emph{due}
+  \Tando\Ttelco\TTleftcurl\Ttelco\TTacute ~(pigeon) but
+  \emph{vindue}
+  \Tampa\Tando\TTnasalizer\TTdot\Ttelco\TTleftcurl\TTdotbelow
+  ~(window).
+\item Two juxtaposed vowels are usually just that in Danish, but in
+  the few cases where it is a diphthong they can be 
+  written as in the English mode.
+\item D is pronounced in three equally common ways: the ``hard d''
+  ([d], clearly ando \Tando), the ``soft d'' (\textipa{[D]}, clearly anto \Tanto), and the
+  ``silent d'', which I suggest writing as extended ando
+  \Textendedando.\label{noteD}
+\item G can also be ``hard'' or ``soft''.  Whereas the ``hard g'' is
+  close to the same sound in English (ungw\"e \Tungwe), the so-called
+  soft g is an ill-defined continuum of weak sounds reaching from
+  completely silent, over semivowels \textipa{[I]} and \textipa{[U]},
+  to an sh \textipa{[S]} in loan words from English or French, where
+  we attempt to preserve to pronunciation, but the original voiced sound
+  \textipa{[Z]} does not exist in Danish.  While the soft G
+  probably deserves several different tengwar, it is suggested to lump
+  it all into unqu\"e \Tunque.\label{noteG}
+\item Th only appear in names, where it is pronounced as T and written
+  with extended tinco \Textendedtinco.  The th\'ul\"e sound
+  \textipa{[T]} does not exist in Danish.\label{noteTH}
+\item J is pronounced as consonant Y in English, and written with anna
+  \Tanna.  The letter combination ai and ei has in modern orthography
+  been replaced with aj and ej, but still appears in names with the
+  same pronunciation.  They can therefore be written as two vowels or
+  with anna, according to taste: The name \emph{Mai} is
+  \Tmalta\Ttelco\TTthreedots\Ttelco\TTdot ~or \Tmalta\Tanna\TTdot
+  ~whereas the month \emph{maj} is written
+  \Tmalta\Tanna\TTdot.\label{noteJ}
+\item The sound \textipa{[S]} appears in German-derived names starting
+  with Sch, in a few borrowed words with sh-, and in a few word like
+  \emph{chokolade}.  It can be written with aha:
+  \Taha\Tquesse\TTrightcurl\Tlambe\TTrightcurl\Tanto\TTthreedots\TTdotbelow.
+  Other cases of ch are rare, and are mostly the same sound as tj
+  \textipa{[tS]} (often even with a choice in orthography), both are
+  written with calma \Tcalma.\label{noteAhaCalma}  \emph{Tjekkiet}
+  \Tcalma\Tquesse\TTacute\TTdoubler\Ttelco\TTdot\Ttinco\TTacute\Ts (Czechia).
+\item S and C: S is written with silm\"e, or silm\"e nuquerna if that
+  makes theta placement more convenient, but should never be written
+  with silm\"e nuquerna if there is no tetha. At the end of the word
+  an s-hook (sa-rinc\"e) can be used, if desired. S is never voiced,
+  and therefore never written with ess\"e.  C is quite rare, and
+  can be pronounced [k] or [s] and is written with quesse or silm\"e
+  nuquerna, respectively.  Silm\"e nuquerna without a tetha will thus
+  be C, with a tetha it is with high probability an s.  \emph{Cirkus}:
+  \Tsilmenuquerna\Toore\TTdot\Tquesse\Tsilmenuquerna\TTrightcurl.\label{noteCS}
+  The letter Z is pronounced exactly like S in Danish, but should still
+  be written with ess\"e or ess\"e nuquerna.
+\item Hv: Words starting with hv are written with hwesta sindarinwa,
+  although the h is completely silent.  This is to acknowledge the
+  common origin and almost one-to-one mapping with the wh- words in
+  English (e.g. hvad \Thwestasindarinwa\Tanto\TTthreedots ~= what,
+  hvor  = where, hvid = white).\label{noteHv}
+\item Hj: Words starting with hj are written with halla anna as the H
+  is completely silent.  No single tengwa is used here, as there is no
+  mapping to similar words in other languages where a single tengwa
+  would be used.  In the contrary, these words map almost one-to-one
+  to Icelandic (close to Old Norse), where hj is pronounced as two
+  joined consonant sounds (hard to pronounce for non-Icelanders).
+  Presumably, Icelandic elves would write these words with hyarmen
+  anna, which is shifted to halla anna in Danish to reflect that the H
+  is silent.  Other words with silent h are also written with halla
+  instead of hyarmen.\label{notehalla}
+\item W is not officially in the Danish alphabet, but is common in
+  names where it is pronounced as V.  Nevertheless, it makes sense to
+  distinguish.  Vala can also be used for the rare u-glide diphtongs:
+  \emph{Laura:} \Tlambe\Tvala\TTthreedots\Troomen\Ttelco\TTthreedots.\label{noteW}
+\item The Danish mode follows the r-rule: \'or\"e is used before a
+  consonant and at the end of the word, r\'omen is used before a
+  vowel.  A following word starting with a vowel does \emph{not}
+  change a final \'or\"e to r\'omen, as it does not change the
+  rhoticity of the r (Danish r's are in general not very rhotic).\label{noteR}
+\item Compound words: Terms consisting of multiple nouns in English
+  are compound words in Danish (office chair, mobile phone, \ldots).
+  Although it is a travesty to write such words with a hypen in
+  Danish, the compoundness should be respected when writing with
+  tengwar: A final vowel (or nasal sound) from one part does not
+  ``climb onto'' the first consonant of the following part.
+  \emph{Kanotur} (canoe trip) is
+  \Tquesse\Tnuumen\TTthreedots\Ttelco\TTrightcurl
+  \Ttinco\Toore\TTleftcurl ~not
+  \Tquesse\Tnuumen\TTthreedots\Ttinco\TTrightcurl\Toore\TTleftcurl\Ts
+  (Hmm, I am in doubt about this rule).
+\item English loan words and names are written according to the
+  English mode, if the original pronunciation is approximately
+  retained.  \emph{Jane} is written
+  \Tanga\Tnuumen\TTthreedots\TTdotbelow ~or
+  \Tanna\Tnuumen\TTthreedots\Ttelco\TTacute, depending on how she
+  pronounces it.
+\end{enumerate}
+
+%\Tquesse\TTacute\Ttinco\TTdoubler\TTthreedots
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
