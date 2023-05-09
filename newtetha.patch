@@ -1,0 +1,45 @@
+--- /usr/local/texlive/2021/texmf-dist/tex/latex/tengwarscript/annatar.cfg	2007-03-19 00:44:49
++++ annatar.cfg	2023-05-05 22:09:24
+@@ -1,3 +1,4 @@
++\newcommand{\TTinvertedthreedots}        {\teng@type{\teng@tehta@invertedthreedots}}
+ \newcommand{\tengwarannatar}[1][1.0]{%
+   % font parameters
+   \def\teng@usefont{tngan_full }%
+@@ -78,6 +79,7 @@
+   \def\teng@tehta@dot             {\teng@place@tehta{\kern 0.70ex\char068}}%
+   \def\teng@tehta@acute           {\teng@place@tehta{\kern 0.70ex\char070}}%
+   \def\teng@tehta@threedots       {\teng@place@tehta{\kern 0.80ex\char064}}%
++  \def\teng@tehta@invertedthreedots {\teng@place@tehta{\kern 1.10ex\raisebox{ 2.43ex}{\char065}}}%
+   \def\teng@tehta@rightcurl       {\teng@place@tehta{\kern 0.70ex\char072}}%
+   \def\teng@tehta@leftcurl        {\teng@place@tehta{\kern 0.70ex\char074}}%
+   \def\teng@tehta@caron           {\teng@place@tehta{\kern 0.70ex\char079}}%
+--- /usr/local/texlive/2021/texmf-dist/tex/latex/tengwarscript/parmaite.cfg	2007-03-19 00:44:49
++++ parmaite.cfg	2023-05-05 22:11:41
+@@ -1,3 +1,4 @@
++\newcommand{\TTinvertedthreedots}        {\teng@type{\teng@tehta@invertedthreedots}}
+ \newcommand{\tengwarparmaite}[1][1.0]{%
+   % font parameters
+   \def\teng@usefont{Parmaite_full }%
+@@ -78,6 +79,7 @@
+   \def\teng@tehta@dot             {\teng@place@tehta{\kern 0.70ex\char068}}%
+   \def\teng@tehta@acute           {\teng@place@tehta{\kern 0.50ex\char070}}%
+   \def\teng@tehta@threedots       {\teng@place@tehta{\kern 0.60ex\char064}}%
++  \def\teng@tehta@invertedthreedots {\teng@place@tehta{\kern0.70ex\raisebox{ 1.73ex}{\char065}}}%
+   \def\teng@tehta@rightcurl       {\teng@place@tehta{\kern 0.50ex\char072}}%
+   \def\teng@tehta@leftcurl        {\teng@place@tehta{\kern 0.60ex\char074}}%
+   \def\teng@tehta@caron           {\teng@place@tehta{\kern 0.70ex\char079}}%
+--- /usr/local/texlive/2021/texmf-dist/tex/latex/tengwarscript/annataritalic.cfg	2007-03-19 00:44:49
++++ annataritalic.cfg	2023-05-09 16:00:46
+@@ -1,3 +1,4 @@
++\newcommand{\TTinvertedthreedots}        {\teng@type{\teng@tehta@invertedthreedots}}
+ \newcommand{\tengwarannataritalic}[1][1.0]{%
+   % font parameters
+   \def\teng@usefont{tngani_full }%
+@@ -78,6 +79,7 @@
+   \def\teng@tehta@dot             {\teng@place@tehta{\kern 0.5ex\raisebox{-0.15ex}{\char068}}}%
+   \def\teng@tehta@acute           {\teng@place@tehta{\kern 0.5ex\char070}}%
+   \def\teng@tehta@threedots       {\teng@place@tehta{\kern 0.6ex\char064}}%
++  \def\teng@tehta@invertedthreedots {\teng@place@tehta{\kern2.40ex\raisebox{2.53ex}{\char065}}}%
+   \def\teng@tehta@rightcurl       {\teng@place@tehta{\kern 0.8ex\char072}}%
+   \def\teng@tehta@leftcurl        {\teng@place@tehta{\kern 1.0ex\char074}}%
+   \def\teng@tehta@caron           {\teng@place@tehta{\kern 0.4ex\raisebox{-0.15ex}{\char079}}}%
