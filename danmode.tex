@@ -5,7 +5,7 @@
 % \usepackage[annataritalic]{tengwarscript}
 % \usepackage[parmaite]{tengwarscript}
 \usepackage{tipa}
-%\usepackage{array}
+\usepackage{xcolor}
 \usepackage{multirow}
 \usepackage[hidelinks]{hyperref}
 
@@ -17,6 +17,7 @@
 \newcommand{\mystrut}{\rule[-1.0\baselineskip]{0pt}{3.5\baselineskip}}
 \newcommand\T{\rule{0pt}{2.8ex}}       % Top strut
 \newcommand\B{\rule[-1.4ex]{0pt}{0pt}} % Bottom strut
+\newcommand{\placeholder}{{\color{lightgray}\Toore}}
 
 \begin{center}\LARGE
   \textbf{Dansk tengwar modus --- Danish tengwar mode}\\
@@ -94,6 +95,13 @@
     \hline
     \Taara\TTthreedots& å$^{\ref{notevokal}}$ & \Ttelco\TTtwodots & \"u$^{\ref{notevokal}}$ &
        \Ttelco\TTdotbelow & e (stumt) \T\B& & \\
+    \hline\hline
+    \multicolumn{8}{|l|}{\textbf{Diverse (miscellaneous):}}\\
+    \hline\hline
+    \tngw{\placeholder\Trighthook} &sa-rinc\"e & \tngw{\placeholder\TTnasalizer} &&
+      \tngw{\placeholder\TTdoubler} & & \tngw{\placeholder\TTtilde} & \\
+     &  s$^{\ref{noteCS}}$ &&  m-, n-$^{\ref{noteNasal}}$&
+     & $\times 2$ $^{\ref{noteDbl}}$ && -w$^{\ref{noteTilde}}$ \\
     \hline\hline
   \end{tabular}
 \end{center}
@@ -224,6 +232,17 @@
   \Tanga\Tnuumen\TTthreedots\TTdotbelow ~or
   \Tanna\Tnuumen\TTthreedots\Ttelco\TTacute, depending on how she
   pronounces it.
+\item The overbar (or overtilde) nasalizes a consonants: It adds an n
+  [n], m [m] or n \textipa{[N]} before the consonant.  It is only used
+  for tenwar in the topmost block, and adds a nasal sound of the same
+  column to the letter, i.e.\ t, d, n and r gains an n-sound; p, b, f,
+  v, m and w gain an m-sound, and k and g gain an n with the
+  \textipa{[N]} sound.\label{noteNasal}
+\item The underbar (or undertilde) doubles a consonant (m and n may be
+  doubled by the overbar instead).\label{noteDbl}
+\item The wavy-curl above adds a following w/u sound.  In Danish, that
+  is only used for qu in loan words like \emph{quiz}
+  \Tquesse\TTtilde\Tessenuquerna\TTdot.\label{noteTilde}
 \end{enumerate}
 
 {\Large \textbf{Noter (Dansk):}\par}
@@ -314,6 +333,16 @@
   \Tanga\Tnuumen\TTthreedots\TTdotbelow ~eller
   \Tanna\Tnuumen\TTthreedots\Ttelco\TTacute, afhængig af hvordan hun
   udtaler det.
+\item Overstreg (eller overtilde) nasaliserer en konsonant: Det
+  tilføjer et n eller m før konsonanten.  Benyttes kun kun for tengwar
+  i den øverste blok, og tilføjer en nasallyd fra samme kolonne: t, d,
+  n og r får et foranstillet n [n]; p, b, f, v, m og w får et
+  foranstillet m [m]; og k og g får et foranstillet n \textipa{[N]}.
+\item Understreg (eller undertilde) fordobler en konsonant.  N og m
+  kan også fordobles med overstreg.
+\item Krølle over er en efterfølgende w/u lyd.  På dansk bruges den
+  kun til låneord med qu, som fx \emph{quiz}
+  \Tquesse\TTtilde\Tessenuquerna\TTdot.
 \end{enumerate}
 
 {\Large \textbf{References:}\par}
